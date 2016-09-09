@@ -1,0 +1,13 @@
+#build
+build
+
+#mac
+.DS_Store
+
+npm-debug.log
+
+*.bundle.js
+
+#npm
+node_modules/
+.idea/

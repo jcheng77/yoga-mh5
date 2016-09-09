@@ -1,0 +1,35 @@
+// colors
+$black: #000000;
+$white: #ffffff;
+$grey: #a0a0a0;
+$black: #000000;
+$orange: #eb3c05;
+$purple: #d03cb4;
+
+// color variables
+$bg-color: $white;
+$sub-bg-color: #444444;
+$modal-bg-color: rgba($black, 0.75);
+$action-color: #5a96ff;
+$emphasis-color: $orange;
+$up-color: #ff0000;
+$down-color: #00ee30;
+$plot-down-color: #00ffff;
+$font-text: #5b5b5b;
+$font-title:#282828;
+$font-tips:#a0a0a0;
+
+// font family
+$font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, '微软雅黑', '黑体', Arial, 'Lucida Grande', sans-serif;
+
+// font-size
+$font-size-small: 0.12rem;
+$font-size: 0.15rem;
+$font-size-large: 0.18rem;
+
+// font-weight
+$font-weight: 400;
+$font-weight-bold: 700;
+
+// transition
+$transition: all 0.5s ease-in-out;
