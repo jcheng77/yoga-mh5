@@ -1,41 +1,20 @@
+<!--<span class="icon sex"></span><span class="level"></span>-->
 <div class="video-live">
-  <video poster="http://img.meelive.cn/MTQ3MzE1MjQ4MjI5OSMyNTUjanBn.jpg" controls>
-    <source src="http://mvideo.spriteapp.cn/video/2016/0906/57ce924375786_wpcco.mp4" type="video/mp4"/>
+  <video poster="{{home.poster}}" controls>
+    <source src="{{home.media}}"/>
     您的浏览器不能使用最新的视频播放方式呢
   </video>
 </div>
-<div class="videogular-container">
-  <videogular vg-theme="home.config.theme.url">
-    <vg-media vg-src="home.config.sources"
-              vg-tracks="home.config.tracks">
-    </vg-media>
-
-    <vg-controls vg-autohide="controller.config.plugins.controls.autoHide" vg-autohide-time="controller.config.plugins.controls.autoHideTime">
-      <vg-play-pause-button></vg-play-pause-button>
-      <vg-time-display>{{ currentTime | date:'mm:ss':'+0000' }}</vg-time-display>
-      <vg-scrub-bar>
-        <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-      </vg-scrub-bar>
-      <vg-time-display>{{ timeLeft | date:'mm:ss':'+0000' }}</vg-time-display>
-      <vg-time-display>{{ totalTime | date:'mm:ss':'+0000' }}</vg-time-display>
-      <vg-volume>
-        <vg-mute-button></vg-mute-button>
-        <vg-volume-bar></vg-volume-bar>
-      </vg-volume>
-      <vg-playback-button></vg-playback-button>
-      <vg-fullscreen-button></vg-fullscreen-button>
-    </vg-controls>
-  </videogular>
-</div>
 <div class="editor">
   <div class="title">
-    <img src="../../../../imges/bg-init.jpg"/>
+    <img ng-src="{{home.avatar}}"/>
   </div>
   <div class="text">
-    <h2>苏C大调<span class="icon sex"></span><span class="level"></span></h2>
+    <h2><span ng-bind="home.name"></span></h2>
     <p>ID:88888888</p>
   </div>
 </div>
+<!--
 <div class="anchor-list">
   <div class="list-nav active">柠檬热门</div>
   <div class="list-nav">她的历史</div>
@@ -47,24 +26,6 @@
         </div>
         <p>你丑你先睡,我美我直播!查 Jia 铌正在直播,快来一起看铌正在直播,快来一起看铌正在直播,快来一起看铌正在直播,快来一起看</p>
       </li>
-      <li>
-        <div class="img">
-          <img src="../../../../imges/eg1.jpeg">
-        </div>
-        <p>你丑你先睡,我美我直播!查 Jia 铌正在直播,快来一起看铌正在直播,快来一起看铌正在直播,快来一起看铌正在直播,快来一起看</p>
-      </li>
-      <li>
-        <div class="img">
-          <img src="../../../../imges/eg1.jpeg">
-        </div>
-        <p>你丑你先睡,我美我直播!查 Jia 铌正在直播,快来一起看铌正在直播,快来一起看铌正在直播,快来一起看铌正在直播,快来一起看</p>
-      </li>
-      <li>
-        <div class="img">
-          <img src="../../../../imges/eg1.jpeg">
-        </div>
-        <p>你丑你先睡,我美我直播!查 Jia 铌正在直播,快来一起看铌正在直播,快来一起看铌正在直播,快来一起看铌正在直播,快来一起看</p>
-      </li>
     </ul>
   </div>
-</div>
+</div>-->
