@@ -1,11 +1,3 @@
-/**
- *  Defines the HomeController controller
- *
- *  @author  sherwin
- *  @date    Sep 9, 2016
- *
- */
-
 class HomeController {
     /*@ngInject*/
     constructor($scope,$sce,$http) {
