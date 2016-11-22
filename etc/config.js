@@ -7,4 +7,4 @@
  *
  **/
 
-export default {appname: 'yoga-live', version: '1.0.0'};
+export default {appname: 'yoga', version: '1.0.0'};

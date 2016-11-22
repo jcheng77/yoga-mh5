@@ -23,13 +23,7 @@ class Feature extends FeatureBase {
 
     _HeaderController($scope, $rootScope) {
         'ngInject';
-
-        $scope.route = 'home';
-
-        $scope.activeRoute = function(name) {
-            $scope.route = name;
-        };
-
+        $rootScope.title = '确认订单';
         $rootScope.$on('$routeChangeSuccess', function(e, next) {
             if (next.$$route && next.$$route.id) {
                 $scope.route = next.$$route.id;

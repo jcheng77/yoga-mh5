@@ -11,19 +11,19 @@
 
 import FeatureBase from 'lib/FeatureBase';
 import Routes from './Routes';
-import HomeController from './controller/HomeController';
-import HomeService from './service/HomeService';
+import ConfirmPurchaseController from './controller/ConfirmPurchaseController';
+import ConfirmPurchaseService from './service/ConfirmPurchaseService';
 
 class Feature extends FeatureBase {
 
     constructor() {
-        super('home');
+        super('confirmPurchase');
         this.routes = Routes;
     }
 
     execute() {
-        this.controller('HomeController', HomeController);
-        this.service('HomeService', HomeService);
+        this.controller('ConfirmPurchaseController', ConfirmPurchaseController);
+        this.service('ConfirmPurchaseService', ConfirmPurchaseService);
     }
 }
 

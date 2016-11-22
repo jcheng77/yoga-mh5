@@ -7,15 +7,15 @@
  *
  */
 
-import tpl from './partials/home.html';
+import tpl from './partials/confirmPurchase.html';
 
 export default [
     {
-        id: 'home',
+        id: 'confirmPurchase',
         isDefault: true,
-        when: '/home',
-        controller: 'HomeController',
-        controllerAs: 'home',
+        when: '/confirmPurchase',
+        controller: 'ConfirmPurchaseController',
+        controllerAs: 'confirmPurchase',
         template: tpl
     }
 ];

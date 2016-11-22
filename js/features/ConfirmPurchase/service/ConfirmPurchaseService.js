@@ -6,7 +6,7 @@
  *
  */
 
-class HomeService {
+class ConfirmPurchaseService {
 
     /*@ngInject*/
     constructor($http, utils) {
@@ -34,4 +34,4 @@ class HomeService {
 
 }
 
-export default HomeService;
+export default ConfirmPurchaseService;

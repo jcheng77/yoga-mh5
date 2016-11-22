@@ -7,6 +7,6 @@
  */
 
 import common from './common/main';
-import home from './home/main';
+import confirmPurchase from './ConfirmPurchase/main';
 
-export default [...common, home];
+export default [...common, confirmPurchase];

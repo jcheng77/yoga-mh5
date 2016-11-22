@@ -1,10 +1,11 @@
 @import 'variables.scss';
 @import 'reset.scss';
 [ng-view]{
-  overflow: scroll;
+  overflow: auto;
   -webkit-overflow-scrolling: touch;
   height: 100%;
   background: $bg-color;
+  padding-top: 0.50rem;
 }
 .icon {
   display: inline-block;
@@ -14,46 +15,18 @@
 }
 .header {
   position: fixed;
-  height: 0.70rem;
+  height: 0.40rem;
   width: 100%;
   left: 0;
-  background: rgba(2,0,19,.6);
+  top: 0;
+  background: $white;
   z-index: 15;
   transition: all .3s ease;
   -webkit-transition: all .3s ease;
-  margin-top: 0;
-  .logo {
-    display: inline-block;
-    width: 0.57rem;
-    height: 0.57rem;
-    background: url("../imges/logo.jpg") center center / 0.57rem 0.57rem no-repeat;
-    left: 0.12rem;
-    top: 0.07rem;
-    position: absolute;
-  }
-  .text {
-    display: inline-block;
-    position: absolute;
-    left: 0.80rem;
-    top: 0.19rem;
-    color: $white;
-  }
-  a {
-    display: inline-block;
-    position: absolute;
-    right: 0.12rem;
-    width: 0.80rem;
-    height: 0.30rem;
-    border: 1px solid $white;
-    border-radius: 1.20rem;
-    text-align: center;
-    background: rgba(0,0,0,.2);
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    color: $white;
-    line-height: 0.30rem;
-    font-size: 0.12rem;
-  }
+  color: $orange;
+  font-size: 0.16rem;
+  text-align: center;
+  line-height: 0.40rem;
 }
 .video-live {
   width: 3.75rem;
