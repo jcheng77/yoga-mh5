@@ -20,7 +20,17 @@
   "dependencies": {
     "angular": "^1.5.6",
     "angular-route": "^1.5.6",
-    "splash-screen": "^3.0.0"
+    "angular-sanitize": "^1.5.8",
+    "splash-screen": "^3.0.0",
+    "videogular": "^1.4.4",
+    "videogular-angulartics": "^1.4.4",
+    "videogular-buffering": "^1.4.4",
+    "videogular-controls": "^1.4.4",
+    "videogular-dash": "^1.4.4",
+    "videogular-ima-ads": "^1.4.4",
+    "videogular-overlay-play": "^1.4.4",
+    "videogular-poster": "^1.4.4",
+    "videogular-themes-default": "^1.4.4"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.7",
