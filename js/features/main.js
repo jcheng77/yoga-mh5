@@ -8,5 +8,6 @@
 
 import common from './common/main';
 import confirmPurchase from './ConfirmPurchase/main';
+import celebrateProfile from './CelebrateProfile/main';
 
-export default [...common, confirmPurchase];
+export default [...common, confirmPurchase, celebrateProfile];
