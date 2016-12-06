@@ -8,8 +8,13 @@
 
 import 'angular-route';
 import 'angular-sanitize';
+import 'angular-hammer';
+import 'swiper';
+import 'angular-swiper';
 
 export default [
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+    'hmTouchEvents',
+    'ksSwiper'
 ];

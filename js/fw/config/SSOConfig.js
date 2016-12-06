@@ -16,7 +16,7 @@ class Configurator extends ConfiguratorBase {
         'ngInject';
 
         $httpProvider.defaults.headers.common.Accept = 'application/json;charset=utf-8';
-        $httpProvider.defaults.withCredentials = true;
+        $httpProvider.defaults.withCredentials = false;
     }
 
     execute() {
