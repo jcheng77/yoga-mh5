@@ -273,14 +273,15 @@
     }
   }
 }
-.articlesNewFirst {
+.yogaLife {
   [ng-view] {
     padding-top: 0.40rem;
   }
   .life-nav {
+    padding-bottom: 0.10rem;
+    background-color: $light-grey-bg;
     ul {
       display: flex;
-      margin-bottom: 0.10rem;
       li {
         flex: 1;
         text-align: center;
@@ -319,6 +320,101 @@
         overflow: hidden;
         img {
           width: 100%;
+        }
+      }
+    }
+  }
+  .news-nav-box {
+    padding-bottom: 0.07rem;
+    background-color: $light-grey-bg;
+    .news-nav {
+      display: flex;
+      background-color: $white;
+      border-bottom: 1px solid $light-border;
+      li {
+        flex: 1;
+        text-align: center;
+        font-size: 0.14rem;
+        padding: 0.10rem 0;
+        span {
+          display: inline-block;
+          width: 0.25rem;
+          height: 0.25rem;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-bottom: 0.05rem;
+        }
+        &:nth-child(1) {
+          span {
+            background: url("../imges/oval1.png") center center / 0.25rem 0.25rem no-repeat;
+          }
+        }
+        &:nth-child(2) {
+          span {
+            background: url("../imges/oval2.png") center center / 0.25rem 0.25rem no-repeat;
+          }
+        }
+        &:nth-child(3) {
+          span {
+            background: url("../imges/oval3.png") center center / 0.25rem 0.25rem no-repeat;
+          }
+        }
+      }
+    }
+  }
+  .news-list {
+    border-top: 1px solid $light-border;
+    padding: 0.05rem;
+    li {
+      position: relative;
+      padding: 0.05rem;
+      overflow: hidden;
+      .item-img {
+        width: 1.34rem;
+        height: 0.84rem;
+        overflow: hidden;
+        float: left;
+        margin-right: 0.10rem;
+        border: 1px solid $light-border;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .item-text {
+        height: 0.84rem;
+        font-size: 0.14rem;
+      }
+
+    }
+  }
+  .video-list {
+    li {
+      margin-bottom: 0.10rem;
+      height: 1.40rem;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        h2 {
+          color: $white;
+          font-size: 0.16rem;
+          height: 1.40rem;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          width: 50%;
+          padding: 0 0.50rem;
         }
       }
     }

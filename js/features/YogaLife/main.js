@@ -11,19 +11,19 @@
 
 import FeatureBase from 'lib/FeatureBase';
 import Routes from './Routes';
-import ArticlesNewFirstController from './controller/ArticlesNewFirstController';
-import ArticlesNewFirstService from './service/ArticlesNewFirstService';
+import YogaLifeController from './controller/YogaLifeController';
+import YogaLifeService from './service/YogaLifeService';
 
 class Feature extends FeatureBase {
 
     constructor() {
-        super('articlesNewFirst');
+        super('yogaLife');
         this.routes = Routes;
     }
 
     execute() {
-        this.controller('ArticlesNewFirstController', ArticlesNewFirstController);
-        this.service('ArticlesNewFirstService', ArticlesNewFirstService);
+        this.controller('YogaLifeController', YogaLifeController);
+        this.service('YogaLifeService', YogaLifeService);
     }
 }
 

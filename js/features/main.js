@@ -9,6 +9,6 @@
 import common from './common/main';
 import confirmPurchase from './ConfirmPurchase/main';
 import celebrateProfile from './CelebrateProfile/main';
-import articlesNewFirst from './ArticlesNewFirst/main';
+import yogaLife from './YogaLife/main';
 
-export default [...common, confirmPurchase, celebrateProfile, articlesNewFirst];
+export default [...common, confirmPurchase, celebrateProfile, yogaLife];

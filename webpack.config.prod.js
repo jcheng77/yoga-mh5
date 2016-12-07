@@ -11,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, 'build'),
         filename: '[hash].[name].bundle.js',
         chunkFilename: '[hash].[id].bundle.js',
-        publicPath: '/'
+        publicPath: '/yoga'
     },
     module: {
         loaders: [

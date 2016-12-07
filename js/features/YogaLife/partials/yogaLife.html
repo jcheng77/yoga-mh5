@@ -1,0 +1,65 @@
+<div class="life-nav">
+  <ul>
+    <li ng-click="yogaLife.showTab(0)"><a ng-class="{'actived':yogaLife.tab === 0}">资讯</a></li>
+    <li ng-click="yogaLife.showTab(1)"><a ng-class="{'actived':yogaLife.tab === 1}">视频</a></li>
+  </ul>
+</div>
+<div class="news-box" ng-if="yogaLife.tab === 0">
+  <ks-swiper-container loop="true" show-nav-buttons="false" space-between="4" pagination-clickable="true" pagination-is-active="true">
+    <ks-swiper-slide class="swiper-slide">
+      <img src="../../../../imges/eg1.jpeg">
+    </ks-swiper-slide>
+    <ks-swiper-slide class="swiper-slide">
+      <img src="../../../../imges/bg-init.jpg">
+    </ks-swiper-slide>
+    <ks-swiper-slide class="swiper-slide">
+      <img src="../../../../imges/logo.jpg">
+    </ks-swiper-slide>
+  </ks-swiper-container>
+  <div class="news-nav-box">
+    <ul class="news-nav">
+      <li>
+        <span></span><br>
+        体式
+      </li>
+      <li>
+        <span></span><br>
+        人物
+      </li>
+      <li>
+        <span></span><br>
+        有料
+      </li>
+    </ul>
+  </div>
+  <ul class="news-list">
+    <li ng-repeat="x in yogaLife.news">
+      <div class="item-img"><img ng-src="{{x.pic_url}}"></div>
+      <div class="item-text" ng-bind="x.title"></div>
+    </li>
+  </ul>
+</div>
+<div class="video-box" ng-if="yogaLife.tab === 1">
+  <ul class="video-list">
+    <li>
+      <img src="../../../../imges/eg1.jpeg">
+      <div class="bg">
+        <h2>2016的当红明星都爱瑜伽,体式正误来找茬</h2>
+      </div>
+    </li>
+    <li>
+      <img src="../../../../imges/eg1.jpeg">
+      <div class="bg">
+        <h2>2016的当红明星都爱瑜伽,体式正误来找茬</h2>
+      </div>
+    </li>
+    <li>
+      <img src="../../../../imges/eg1.jpeg">
+      <div class="bg">
+        <h2>2016的当红明星都爱瑜伽,体式正误来找茬</h2>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
