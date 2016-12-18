@@ -17,11 +17,18 @@ class LiveWorkService {
 
     getData() {
         const url = api.API_LIVE_WORK;
-        console.log(url)
         return this.$http.get(url).then(data => data.data).then(data => {
-            console.log(data)
-        })
-
+            const swiper = data.filter(data => data.type === 0);
+            const wait = data.filter(data => data.state === 0);
+            const live = data.filter(data => data.state === 1);
+            const over = data.filter(data => data.state === 2);
+            return {
+                swiper:swiper,
+                wait:wait,
+                live:live,
+                over:over
+            }
+        });
     }
 
 }

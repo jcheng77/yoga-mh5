@@ -13,7 +13,10 @@ class LiveWorkController {
         this.$rootScope.title = '柠檬直播';
         this.tab = 0; //0:资讯 1:视频;
         this.LiveWorkService.getData().then(data => {
-
+            this.liveWorksSwiper = data.swiper;
+            this.liveWorksWait = data.wait;
+            this.liveWorksLive = data.live;
+            this.liveWorksOver = data.over;
         })
     }
     showTab(a) {
