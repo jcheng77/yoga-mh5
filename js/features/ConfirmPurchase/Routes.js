@@ -12,7 +12,7 @@ import tpl from './partials/confirmPurchase.html';
 export default [
     {
         id: 'confirmPurchase',
-        isDefault: true,
+        isDefault: false,
         when: '/confirmPurchase',
         controller: 'ConfirmPurchaseController',
         controllerAs: 'confirmPurchase',

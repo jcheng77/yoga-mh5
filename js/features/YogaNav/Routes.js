@@ -7,15 +7,15 @@
  *
  */
 
-import tpl from './partials/liveWork.html';
+import tpl from './partials/yogaNav.html';
 
 export default [
     {
-        id: 'liveWork',
+        id: 'yogaNav',
         isDefault: false,
-        when: '/liveWork',
-        controller: 'LiveWorkController',
-        controllerAs: 'liveWork',
+        when: '/yogaNav',
+        controller: 'YogaNavController',
+        controllerAs: 'yogaNav',
         template: tpl
     }
 ];

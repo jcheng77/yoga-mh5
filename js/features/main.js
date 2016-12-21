@@ -11,5 +11,6 @@ import confirmPurchase from './ConfirmPurchase/main';
 import celebrateProfile from './CelebrateProfile/main';
 import yogaLife from './YogaLife/main';
 import liveWork from './LiveWork/main';
+import yogaNav from './YogaNav/main';
 
-export default [...common, confirmPurchase, celebrateProfile, yogaLife, liveWork];
+export default [...common, confirmPurchase, celebrateProfile, yogaLife, liveWork, yogaNav];

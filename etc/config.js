@@ -7,4 +7,4 @@
  *
  **/
 
-export default {appname: 'yoga', version: '1.0.0'};
+export default {appname: '「瑜伽柠檬」- 名师直播', version: '1.0.0'};

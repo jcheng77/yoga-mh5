@@ -12,7 +12,7 @@ import tpl from './partials/celebrateProfile.html';
 export default [
     {
         id: 'celebrateProfile',
-        isDefault: true,
+        isDefault: false,
         when: '/celebrateProfile',
         controller: 'CelebrateProfileController',
         controllerAs: 'celebrateProfile',
