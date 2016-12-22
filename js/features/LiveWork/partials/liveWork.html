@@ -1,6 +1,6 @@
 <div>
     <div ng-if="liveWork.liveWorksSwiper.length">
-        <ks-swiper-container loop="true" show-nav-buttons="false" space-between="4" pagination-clickable="true" pagination-is-active="true">
+        <ks-swiper-container loop="true" show-nav-buttons="false" space-between="4" pagination-clickable="true" autoplay="3000" pagination-is-active="true">
             <ks-swiper-slide class="swiper-slide" ng-repeat="work in liveWork.liveWorksSwiper">
                 <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}">
                     <img ng-src="{{work.b_cover}}">
