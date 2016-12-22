@@ -1,17 +1,20 @@
 class LiveWorkController {
     /*@ngInject*/
-    constructor($scope, $rootScope, $sce, $http, LiveWorkService) {
+    constructor($scope, $rootScope, $sce, $http, LiveWorkService, $location) {
         this.$rootScope = $rootScope;
         this.$scope = $scope;
         this.$http = $http;
         this.$sce = $sce;
         this.LiveWorkService = LiveWorkService;
+        this.$location = $location;
         this._init_();
         this._destroy_();
     }
     _init_() {
         this.$rootScope.title = '柠檬直播';
         this.tab = 0; //0:资讯 1:视频;
+        this.ref = this.$location.search()['ref'];
+        console.log(this.ref)
         this.LiveWorkService.getData().then(data => {
             this.liveWorksSwiper = data.swiper;
             this.liveWorksWait = data.wait;

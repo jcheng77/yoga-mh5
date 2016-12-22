@@ -12,7 +12,7 @@
     <ul class="live-work work-list" ng-if="liveWork.liveWorksLive.length">
         <li><span class="time-icon"></span>正在直播</li>
         <li ng-repeat="work in liveWork.liveWorksLive">
-            <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}">
+            <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}?ref={{liveWork.ref}}">
                 <div class="work-img">
                     <img ng-src="{{work.pic}}">
                 </div>
@@ -30,7 +30,7 @@
     <ul class="live-work work-list" ng-if="liveWork.liveWorksWait.length">
         <li><span class="time-icon"></span>即将开始</li>
         <li ng-repeat="work in liveWork.liveWorksWait">
-            <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}">
+            <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}?ref={{liveWork.ref}}">
                 <div class="work-img">
                     <img ng-src="{{work.pic}}">
                 </div>
@@ -48,7 +48,7 @@
     <ul class="live-work work-list" ng-if="liveWork.liveWorksOver.length">
         <li><span class="time-icon"></span>精彩回放</li>
         <li ng-repeat="work in liveWork.liveWorksOver">
-            <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}">
+            <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}?ref={{liveWork.ref}}">
                 <div class="work-img">
                     <img ng-src="{{work.pic}}">
                 </div>
