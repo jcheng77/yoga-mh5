@@ -1,4 +1,3 @@
-import $ from 'jquery';
 class LiveWorkController {
     /*@ngInject*/
     constructor($scope, $rootScope, $sce, $http, LiveWorkService, $location) {
