@@ -1,65 +1,71 @@
 <div class="spinner" ng-if="!liveWork.liveWorksSwiper.length"></div>
-<div>
-    <div ng-if="liveWork.liveWorksSwiper.length">
-        <ks-swiper-container loop="true" show-nav-buttons="false" space-between="4" pagination-clickable="true" autoplay="3000" pagination-is-active="true">
-            <ks-swiper-slide class="swiper-slide" ng-repeat="work in liveWork.liveWorksSwiper">
-                <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}">
-                    <img ng-src="{{work.b_cover}}">
+<div ng-if="liveWork.liveWorksSwiper.length">
+    <div class="tab-infomation">
+        <div ng-if="liveWork.liveWorksSwiper.length">
+            <ks-swiper-container loop="true" show-nav-buttons="false" space-between="4" pagination-clickable="true" autoplay="3000" pagination-is-active="true">
+                <ks-swiper-slide class="swiper-slide" ng-repeat="work in liveWork.liveWorksSwiper">
+                    <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}">
+                        <img ng-src="{{work.b_cover}}">
+                    </a>
+                </ks-swiper-slide>
+            </ks-swiper-container>
+        </div>
+        <ul class="info-tab">
+            <li ng-repeat="title in  liveWork.infoNav" hm-tap="liveWork.getWork(title)" ng-class="{'actived':liveWork.tag === title}">
+                <b></b><br>
+                <span ng-bind="title"></span>
+            </li>
+        </ul>
+        <ul class="live-work work-list" ng-if="liveWork.liveWorksLive.length">
+            <li><span class="time-icon"></span>正在直播</li>
+            <li ng-repeat="work in liveWork.liveWorksLive">
+                <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}?ref={{liveWork.ref}}">
+                    <div class="work-img">
+                        <img ng-src="{{work.pic}}">
+                    </div>
+                    <div class="work-text">
+                        <h2><span ng-bind="work.host_name"></span>&nbsp;-&nbsp;<span ng-bind="work.name"></span></h2>
+                        <p class="date" ng-bind="work.stime_text"></p>
+                        <p class="watch-sum">
+                            观看人数:<span ng-bind="work.total_views"></span>
+                        </p>
+                    </div>
                 </a>
-            </ks-swiper-slide>
-        </ks-swiper-container>
+            </li>
+        </ul>
+        <ul class="live-work work-list" ng-if="liveWork.liveWorksWait.length">
+            <li><span class="time-icon"></span>即将开始</li>
+            <li ng-repeat="work in liveWork.liveWorksWait">
+                <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}?ref={{liveWork.ref}}">
+                    <div class="work-img">
+                        <img ng-src="{{work.pic}}">
+                    </div>
+                    <div class="work-text">
+                        <h2><span ng-bind="work.host_name"></span>&nbsp;-&nbsp;<span ng-bind="work.name"></span></h2>
+                        <p class="date" ng-bind="work.stime_text"></p>
+                        <p class="watch-sum">
+                            观看人数:<span ng-bind="work.total_views"></span>
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul class="live-work work-list" ng-if="liveWork.liveWorksOver.length">
+            <li><span class="time-icon"></span>精彩回放</li>
+            <li ng-repeat="work in liveWork.liveWorksOver">
+                <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}?ref={{liveWork.ref}}">
+                    <div class="work-img">
+                        <img ng-src="{{work.pic}}">
+                    </div>
+                    <div class="work-text">
+                        <h2><span ng-bind="work.host_name"></span>&nbsp;-&nbsp;<span ng-bind="work.name"></span></h2>
+                        <p class="date" ng-bind="work.stime_text"></p>
+                        <p class="watch-sum">
+                            观看人数:<span ng-bind="work.total_views"></span>
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
-    <ul class="live-work work-list" ng-if="liveWork.liveWorksLive.length">
-        <li><span class="time-icon"></span>正在直播</li>
-        <li ng-repeat="work in liveWork.liveWorksLive">
-            <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}?ref={{liveWork.ref}}">
-                <div class="work-img">
-                    <img ng-src="{{work.pic}}">
-                </div>
-                <div class="work-text">
-                    <h2><span ng-bind="work.host_name"></span>&nbsp;-&nbsp;<span ng-bind="work.name"></span></h2>
-                    <p class="date" ng-bind="work.stime_text"></p>
-                    <p class="watch-sum">
-                        观看人数:<span ng-bind="work.total_views"></span>
-                    </p>
-                </div>
-            </a>
-        </li>
-    </ul>
-
-    <ul class="live-work work-list" ng-if="liveWork.liveWorksWait.length">
-        <li><span class="time-icon"></span>即将开始</li>
-        <li ng-repeat="work in liveWork.liveWorksWait">
-            <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}?ref={{liveWork.ref}}">
-                <div class="work-img">
-                    <img ng-src="{{work.pic}}">
-                </div>
-                <div class="work-text">
-                    <h2><span ng-bind="work.host_name"></span>&nbsp;-&nbsp;<span ng-bind="work.name"></span></h2>
-                    <p class="date" ng-bind="work.stime_text"></p>
-                    <p class="watch-sum">
-                        观看人数:<span ng-bind="work.total_views"></span>
-                    </p>
-                </div>
-            </a>
-        </li>
-    </ul>
-
-    <ul class="live-work work-list" ng-if="liveWork.liveWorksOver.length">
-        <li><span class="time-icon"></span>精彩回放</li>
-        <li ng-repeat="work in liveWork.liveWorksOver">
-            <a ng-href="http://staging.boluo.me/channels/{{work.id.$oid}}?ref={{liveWork.ref}}">
-                <div class="work-img">
-                    <img ng-src="{{work.pic}}">
-                </div>
-                <div class="work-text">
-                    <h2><span ng-bind="work.host_name"></span>&nbsp;-&nbsp;<span ng-bind="work.name"></span></h2>
-                    <p class="date" ng-bind="work.stime_text"></p>
-                    <p class="watch-sum">
-                        观看人数:<span ng-bind="work.total_views"></span>
-                    </p>
-                </div>
-            </a>
-        </li>
-    </ul>
 </div>

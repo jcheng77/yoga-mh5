@@ -425,6 +425,26 @@
   [ng-view] {
     padding-top: 0.50rem;
   }
+  .life-nav {
+    padding-bottom: 0.10rem;
+    background-color: $light-grey-bg;
+    ul {
+      display: flex;
+      li {
+        flex: 1;
+        text-align: center;
+        a {
+          display: inline-block;
+          width: 0.80rem;
+          text-align: center;
+          padding: 0.10rem 0;
+        }
+        a.actived {
+          border-bottom: 2px solid $orange;
+        }
+      }
+    }
+  }
   .swiper-container {
     width: 100%;
     height: 1.70rem;
@@ -442,6 +462,65 @@
   }
   .live-work {
     border-top: 0.15rem solid $bg-color;
+  }
+  .info-tab {
+    overflow: hidden;
+    padding-top: 0.15rem;
+    li.actived {
+      color: $orange;
+    }
+    li {
+      width: 25%;
+      float: left;
+      box-sizing: border-box;
+      text-align: center;
+      padding-bottom: 0.15rem;
+      b {
+        display: inline-block;
+        width: 0.20rem;
+        height: 0.20rem;
+      }
+      &:nth-child(1) {
+        b {
+          background: url("../imges/remen.png") no-repeat center center / 0.20rem 0.20rem;
+        }
+      }
+      &:nth-child(2) {
+        b {
+          background: url("../imges/pose.png") no-repeat center center / 0.20rem 0.20rem;
+        }
+      }
+      &:nth-child(3) {
+        b {
+          background: url("../imges/liliao.png") no-repeat center center / 0.20rem 0.20rem;
+        }
+      }
+      &:nth-child(4) {
+        b {
+          background: url("../imges/liupai.png") no-repeat center center / 0.20rem 0.20rem;
+        }
+      }
+      &:nth-child(5) {
+        b {
+          background: url("../imges/lijichu.png") no-repeat center center / 0.20rem 0.20rem;
+        }
+      }
+      &:nth-child(6) {
+        b {
+          background: url("../imges/tiyanke.png") no-repeat center center / 0.20rem 0.20rem;
+        }
+      }
+      &:nth-child(7) {
+        b {
+          background: url("../imges/workshop.png") no-repeat center center / 0.20rem 0.20rem;
+        }
+      }
+      &:nth-child(8) {
+        b {
+          background: url("../imges/zhutike.png") no-repeat center center / 0.20rem 0.20rem;
+        }
+      }
+    }
   }
   .work-list {
     li {
