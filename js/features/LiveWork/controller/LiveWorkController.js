@@ -24,7 +24,7 @@ class LiveWorkController {
             '专题课'
         ];
         this.tag = '热门';
-        this.getWork(this.infoNav[0]);
+        this.getWork('');
     }
     getWork(tag){
         this.tag = tag;
