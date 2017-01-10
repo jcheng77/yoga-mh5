@@ -28,7 +28,7 @@ class LiveWorkController {
     }
     getWork(tag){
         this.tag = tag;
-        this.LiveWorkService.getData(tag).then(data => {
+        this.LiveWorkService.getData(encodeURIComponent(tag)).then(data => {
             this.liveWorksWait = data.wait;
             this.liveWorksLive = data.live;
             this.liveWorksOver = data.over;
