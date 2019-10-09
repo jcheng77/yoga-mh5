@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <script type='text/javascript' src='./js/features/LiveWork/ng-infinite-scroll.js'></script>
         <% if (htmlWebpackPlugin.options.pushState) { %><base href="/"><% } %>
     </head>
     <body>

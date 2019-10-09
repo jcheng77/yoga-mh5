@@ -60,6 +60,9 @@ module.exports = {
             template: 'index.html_vm',
             favicon: 'imges/favicon.ico',
             hash: false
-        })
+        }),
+        new webpack.ProvidePlugin({
+            "window.jQuery": "jquery"
+        }),
     ]
 };

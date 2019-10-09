@@ -15,18 +15,18 @@ class LiveWorkService {
         this.utils = utils;
     }
 
-    getData(tag) {
+    getData(tag, type, index) {
         const url = api.API_LIVE_WORK;
-        return this.$http.get(`${url}?tag=${tag}`).then(data => data.data).then(data => {
-            const wait = data.filter(data => data.state === 0);
-            const live = data.filter(data => data.state === 1);
-            const over = data.filter(data => data.state === 2);
-            return {
-                wait:wait,
-                live:live,
-                over:over
-            }
-        });
+        if(index){
+            return this.$http.get(`${url}?tag=${tag}&state=${type}&page=${index}`).then(data => data.data).then(data => {
+                return data;
+            });
+        }
+        else{
+            return this.$http.get(`${url}?tag=${tag}&state=${type}`).then(data => data.data).then(data => {
+                return data;
+            });
+        }
     }
     getBanner() {
         const url = api.API_LIVE_WORK;
