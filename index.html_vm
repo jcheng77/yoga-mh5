@@ -6,7 +6,7 @@
     </head>
     <body>
 
-        <div ng-view autoscroll="true"></div>
+        <div ng-view autoscroll="true" id='mainContainer'></div>
 
     </body>
 </html>
