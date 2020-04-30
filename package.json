@@ -18,7 +18,7 @@
   "author": "sherwin <oycspjn111@126.com>",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "angular": "^1.7",
     "angular-hammer": "^2.2.0",
     "angular-route": "^1.5.6",
